@@ -33,23 +33,23 @@
 import Icons from '_c/icons'
 import CommonIcon from '_c/common-icon'
 export default {
-  name: 'icons_pages',
-  components: {
-    Icons,
-    CommonIcon
-  },
-  data () {
-    return {
-      customIconList: [
-        'woman',
-        'man',
-        'smile',
-        'meh',
-        'frown',
-        'bear'
-      ]
+    name: 'icons_pages',
+    components: {
+        Icons,
+        CommonIcon
+    },
+    data () {
+        return {
+            customIconList: [
+                'woman',
+                'man',
+                'smile',
+                'meh',
+                'frown',
+                'bear'
+            ]
+        }
     }
-  }
 }
 </script>
 

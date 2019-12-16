@@ -8,23 +8,23 @@
 <script>
 import Editor from '_c/editor'
 export default {
-  name: 'editor_page',
-  components: {
-    Editor
-  },
-  data () {
-    return {
-      content: '12312323'
-    }
-  },
-  methods: {
-    handleChange (html, text) {
-      console.log(html, text)
+    name: 'editor_page',
+    components: {
+        Editor
     },
-    changeContent () {
-      this.$refs.editor.setHtml('<p>powered by wangeditor</p>')
+    data () {
+        return {
+            content: '12312323'
+        }
+    },
+    methods: {
+        handleChange (html, text) {
+            console.log(html, text)
+        },
+        changeContent () {
+            this.$refs.editor.setHtml('<p>powered by wangeditor</p>')
+        }
     }
-  }
 }
 </script>
 

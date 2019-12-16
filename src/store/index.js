@@ -7,17 +7,17 @@ import app from './module/app'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  state: {
+    state: {
     //
-  },
-  mutations: {
+    },
+    mutations: {
     //
-  },
-  actions: {
+    },
+    actions: {
     //
-  },
-  modules: {
-    user,
-    app
-  }
+    },
+    modules: {
+        user,
+        app
+    }
 })

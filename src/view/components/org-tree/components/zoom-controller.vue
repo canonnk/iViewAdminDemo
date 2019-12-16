@@ -12,37 +12,37 @@
 
 <script>
 export default {
-  name: 'ZoomController',
-  props: {
-    value: {
-      type: Number,
-      default: 100
+    name: 'ZoomController',
+    props: {
+        value: {
+            type: Number,
+            default: 100
+        },
+        step: {
+            type: Number,
+            default: 20
+        },
+        min: {
+            type: Number,
+            default: 10
+        },
+        max: {
+            type: Number,
+            default: 200
+        }
     },
-    step: {
-      type: Number,
-      default: 20
-    },
-    min: {
-      type: Number,
-      default: 10
-    },
-    max: {
-      type: Number,
-      default: 200
-    }
-  },
-  methods: {
-    scale (type) {
-      const zoom = this.value + (type === 'down' ? -this.step : this.step)
-      if (
-        (zoom < this.min && type === 'down') ||
+    methods: {
+        scale (type) {
+            const zoom = this.value + (type === 'down' ? -this.step : this.step)
+            if (
+                (zoom < this.min && type === 'down') ||
         (zoom > this.max && type === 'up')
-      ) {
-        return
-      }
-      this.$emit('input', zoom)
+            ) {
+                return
+            }
+            this.$emit('input', zoom)
+        }
     }
-  }
 }
 </script>
 

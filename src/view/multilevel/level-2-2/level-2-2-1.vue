@@ -6,11 +6,11 @@
 </template>
 <script>
 export default {
-  name: 'level_2_2_1',
-  data () {
-    return {
-      val: ''
+    name: 'level_2_2_1',
+    data () {
+        return {
+            val: ''
+        }
     }
-  }
 }
 </script>

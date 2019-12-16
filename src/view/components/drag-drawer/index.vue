@@ -56,30 +56,30 @@
 <script>
 import DragDrawer from '_c/drag-drawer'
 export default {
-  name: 'drag_drawer_page',
-  components: {
-    DragDrawer
-  },
-  data () {
-    return {
-      showWindowBDrawer: false,
-      showContainerBDrawer: false,
-      showBDrawer3: false,
-      width1: 300,
-      width2: 200,
-      placement: false,
-      draggable: true
-    }
-  },
-  computed: {
-    placementComputed () {
-      return this.placement ? 'left' : 'right'
-    }
-  },
-  methods: {
-    handleResize (event) {
-      const { atMin } = event
-      /* eslint-disable */
+    name: 'drag_drawer_page',
+    components: {
+        DragDrawer
+    },
+    data () {
+        return {
+            showWindowBDrawer: false,
+            showContainerBDrawer: false,
+            showBDrawer3: false,
+            width1: 300,
+            width2: 200,
+            placement: false,
+            draggable: true
+        }
+    },
+    computed: {
+        placementComputed () {
+            return this.placement ? 'left' : 'right'
+        }
+    },
+    methods: {
+        handleResize (event) {
+            const { atMin } = event
+            /* eslint-disable */
       console.log(atMin);
     },
   }

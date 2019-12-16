@@ -19,22 +19,22 @@
 import SplitPane from '_c/split-pane'
 import Icons from '_c/icons'
 export default {
-  name: 'split_pane_page',
-  components: {
-    SplitPane,
-    Icons
-  },
-  data () {
-    return {
-      offset: 0.6,
-      offsetVertical: '250px'
+    name: 'split_pane_page',
+    components: {
+        SplitPane,
+        Icons
+    },
+    data () {
+        return {
+            offset: 0.6,
+            offsetVertical: '250px'
+        }
+    },
+    methods: {
+        handleMoving (e) {
+            console.log(e.atMin, e.atMax)
+        }
     }
-  },
-  methods: {
-    handleMoving (e) {
-      console.log(e.atMin, e.atMax)
-    }
-  }
 }
 </script>
 

@@ -31,32 +31,32 @@
 import DragList from '_c/drag-list'
 import { getDragList } from '@/api/data'
 export default {
-  name: 'drag_list_page',
-  components: {
-    DragList
-  },
-  data () {
-    return {
-      list1: [],
-      list2: [],
-      dropConClass: {
-        left: ['drop-box', 'left-drop-box'],
-        right: ['drop-box', 'right-drop-box']
-      },
-      handleList: []
+    name: 'drag_list_page',
+    components: {
+        DragList
+    },
+    data () {
+        return {
+            list1: [],
+            list2: [],
+            dropConClass: {
+                left: ['drop-box', 'left-drop-box'],
+                right: ['drop-box', 'right-drop-box']
+            },
+            handleList: []
+        }
+    },
+    methods: {
+        handleChange ({ src, target, oldIndex, newIndex }) {
+            this.handleList.push(`${src} => ${target}, ${oldIndex} => ${newIndex}`)
+        }
+    },
+    mounted () {
+        getDragList().then(res => {
+            this.list1 = res.data
+            this.list2 = [res.data[0]]
+        })
     }
-  },
-  methods: {
-    handleChange ({ src, target, oldIndex, newIndex }) {
-      this.handleList.push(`${src} => ${target}, ${oldIndex} => ${newIndex}`)
-    }
-  },
-  mounted () {
-    getDragList().then(res => {
-      this.list1 = res.data
-      this.list2 = [res.data[0]]
-    })
-  }
 }
 </script>
 <style lang="less">
