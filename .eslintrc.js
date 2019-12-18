@@ -14,7 +14,8 @@ module.exports = {
     }],
     'indent': ['error', 4],
     'no-undef': 'off',
-    'camelcase': 'off'
+    'camelcase': 'off',
+    'vue/no-parsing-error': [2, { "x-invalid-end-tag": false }]
   },
   parserOptions: {
     parser: 'babel-eslint'

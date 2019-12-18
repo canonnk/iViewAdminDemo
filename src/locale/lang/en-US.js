@@ -44,5 +44,7 @@ export default {
     drag_drawer_page: 'Draggable Drawer',
     tree_select_page: 'Tree Selector',
     table_demo: 'table demo',
-    table_demo2: 'table demo2'
+    table_demo2: 'table demo2',
+    menu_manager: 'sys menu manager',
+    sys: 'sys manager'
 }

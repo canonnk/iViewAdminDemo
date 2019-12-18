@@ -44,5 +44,7 @@ export default {
     drag_drawer_page: '可拖动抽屉',
     tree_select_page: '树状下拉选择器',
     table_demo: '表格测试',
-    table_demo2: 'mock模拟数据测试'
+    table_demo2: 'mock模拟数据测试',
+    menu_manager: '菜单配置',
+    sys: '系统配置'
 }

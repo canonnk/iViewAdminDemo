@@ -17,7 +17,7 @@ export default {
                 title: 'id',
                 key: 'id'
             }, {
-                title: '名称111',
+                title: '名称',
                 key: 'name'
             }, {
                 title: '描述',

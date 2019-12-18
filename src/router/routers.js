@@ -28,6 +28,42 @@ export default [
         component: () => import('@/view/login/login.vue')
     },
     {
+        path: '/sys',
+        name: 'sys',
+        component: Main,
+        meta: {
+            icon: 'logo-buffer',
+            title: '系统配置'
+        },
+        children: [
+            {
+                path: 'menu_manager',
+                name: 'menu_manager',
+                meta: {
+                    icon: 'md-arrow-dropdown-circle',
+                    title: '系统菜单配置'
+                },
+                component: () => import('@/view/sys/menu-manager/menu-manager.vue')
+            }, {
+                path: 'role_authority_manager',
+                name: 'role_authority_manager',
+                meta: {
+                    icon: 'md-arrow-dropdown-circle',
+                    title: '角色权限配置'
+                }
+                // component: () => import('@/view/sys/menu-manager/rolw-authority-manager.vue')
+            }, {
+                path: 'user_role_manager',
+                name: 'user_role_manager',
+                meta: {
+                    icon: 'md-arrow-dropdown-circle',
+                    title: '人员角色配置'
+                }
+                // component: () => import('@/view/sys/menu-manager/user-role-manager.vue')
+            }
+        ]
+    },
+    {
         path: '/',
         name: '_home',
         redirect: '/home',
