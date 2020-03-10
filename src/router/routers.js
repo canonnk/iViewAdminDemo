@@ -60,6 +60,14 @@ export default [
                     title: '人员角色配置'
                 }
                 // component: () => import('@/view/sys/menu-manager/user-role-manager.vue')
+            }, {
+                path: 'test001_index',
+                name: 'test001_index',
+                meta: {
+                    icon: 'md-arrow-dropdown-circle',
+                    title: '报表测试'
+                },
+                component: () => import('@/view/test001/index.vue')
             }
         ]
     },
